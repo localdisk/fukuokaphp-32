@@ -1,5 +1,14 @@
 # Laravel Boilerplate
 
+```
+$ composer install
+$ cp .env.example .env
+$ php artisan key:generate
+$ bash ./vessel init
+$ ./vessel start
+```
+
+
 ## Include Package
 
 ### PHP
