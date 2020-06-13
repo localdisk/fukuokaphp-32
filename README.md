@@ -4,6 +4,8 @@
 $ composer install
 $ cp .env.example .env
 $ php artisan key:generate
+$ yarn
+$ yarn run watch
 $ bash ./vessel init
 $ ./vessel start
 ```
