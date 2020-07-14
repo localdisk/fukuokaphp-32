@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Laravel Boilerplate</title>
+  <title>@yield('title', 'Laravel Boiler Plate')</title>
   <livewire:styles />
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   @stack('styles')

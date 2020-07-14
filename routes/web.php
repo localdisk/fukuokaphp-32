@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::view('/', 'top')->name('top');
+// Auth::routes();
+
+Route::group(['middleware' => 'guest'], function () {
+    Route::livewire('/register', 'register')->name('register');
+    Route::livewire('/login', 'login')->name('login');
+    Route::livewire('/password/reset', 'password-reset-request-form')->name('password.request');
+    Route::livewire('/password/reset/{token}', 'password-reset-form')->name('password.reset');
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::view('/home', 'home')->name('home');
+});

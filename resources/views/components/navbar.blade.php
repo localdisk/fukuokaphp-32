@@ -14,6 +14,7 @@
         </div>
         <div class="block">
           <div class="ml-4 flex items-center">
+
             @auth
             <!-- Profile dropdown -->
             <div class="ml-3 relative" x-data="{ show: false }">
@@ -28,15 +29,15 @@
                 <div class="py-1 rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                  <livewire:logout />
                 </div>
               </div>
             </div>
             @endauth
 
             @guest
-            <a href="" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Register</a>
-            <a href="" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Login</a>
+            <a href="{{ route('register') }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Register</a>
+            <a href="{{ route('login') }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Login</a>
             @endguest
 
           </div>
