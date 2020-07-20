@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'top')->name('top');
-// Auth::routes();
 
 Route::group(['middleware' => 'guest'], function () {
     Route::livewire('/register', 'register')->name('register');
@@ -23,6 +22,6 @@ Route::group(['middleware' => 'guest'], function () {
     Route::livewire('/password/reset/{token}', 'password-reset-form')->name('password.reset');
 });
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::view('/home', 'home')->name('home');
 });
