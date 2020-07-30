@@ -3,7 +3,6 @@
 namespace App\Http\Livewire;
 
 use App\Models\User;
-use Illuminate\Auth\AuthManager;
 use Illuminate\View\View;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\Container\BindingResolutionException;
@@ -12,8 +11,6 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\Redirector;
-use Throwable;
-use Symfony\Component\Routing\Exception\RouteNotFoundException;
 use Validator;
 
 class Register extends Component
@@ -35,11 +32,8 @@ class Register extends Component
     /**
      * register user.
      *
-     * @param AuthManager
+     * @param Request $request
      * @return Redirector
-     * @throws Throwable
-     * @throws BindingResolutionException
-     * @throws RouteNotFoundException
      */
     public function registerUser(Request $request): Redirector
     {
