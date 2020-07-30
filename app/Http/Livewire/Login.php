@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Livewire\Component;
@@ -19,9 +20,9 @@ class Login extends Component
     /**
      * login.
      *
-     * @return Redirector
+     * @return Redirector|RedirectResponse
      */
-    public function login(): Redirector
+    public function login()
     {
         $validated = $this->validate([
             'email' => 'required|email',
