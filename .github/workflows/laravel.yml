@@ -50,6 +50,6 @@ jobs:
     - name: directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - name: execute psalm
-      uses: docker://vimeo/psalm-github-actions
+      run: ./vendor/bin/psalm
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: php artisan test
