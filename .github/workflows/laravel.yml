@@ -29,7 +29,7 @@ jobs:
       DB_PASSWORD: password
     steps:
     - uses: actions/checkout@v2
-    - name: Copy .env
+    - name: copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: cache vendor
       id: cache
@@ -51,11 +51,11 @@ jobs:
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: php artisan test
   psalm:
-    name: Psalm
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Psalm
-        uses: docker://vimeo/psalm-github-actions
+    - uses: actions/checkout@v2
+    - name: copy .env
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    - name: Generate key
+      run: php artisan key:generate
+    - uses: docker://vimeo/psalm-github-actions
