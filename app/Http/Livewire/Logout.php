@@ -2,11 +2,10 @@
 
 namespace App\Http\Livewire;
 
-use Illuminate\Auth\AuthManager;
 use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\Redirector;
@@ -20,9 +19,9 @@ class Logout extends Component
      *
      * @return Redirector|RedirectResponse
      */
-    public function logout(Request $request, AuthManager $auth)
+    public function logout(Request $request)
     {
-        $auth->guard()->logout();
+        Auth::logout();
 
         $request->session()->invalidate();
 
@@ -35,7 +34,6 @@ class Logout extends Component
      * render.
      *
      * @return View|Factory
-     * @throws BindingResolutionException
      */
     public function render()
     {

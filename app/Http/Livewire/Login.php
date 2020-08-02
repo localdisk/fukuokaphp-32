@@ -2,7 +2,6 @@
 
 namespace App\Http\Livewire;
 
-use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -40,7 +39,6 @@ class Login extends Component
      * render.
      *
      * @return View|Factory
-     * @throws BindingResolutionException
      */
     public function render()
     {
