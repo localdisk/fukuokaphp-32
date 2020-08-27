@@ -20,6 +20,6 @@
     },
     "dependencies": {
         "alpinejs": "^2.6.0",
-        "tailwindcss": "^1.7.2"
+        "tailwindcss": "^1.7.5"
     }
 }
