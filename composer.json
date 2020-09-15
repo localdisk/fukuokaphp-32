@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.0",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^1.2",
+        "livewire/livewire": "^2.2",
         "overtrue/laravel-lang": "^4.0",
         "predis/predis": "^1.1",
         "shipping-docker/vessel": "^5.0"
