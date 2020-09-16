@@ -111,49 +111,6 @@
             "time": "2020-08-18T23:57:15+00:00"
         },
         {
-            "name": "caouecs/laravel-lang",
-            "version": "7.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/caouecs/lang.git",
-                "reference": "c28e39a14dc3cacaeb8db0a7cc612db37d1e15cc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/caouecs/lang/zipball/c28e39a14dc3cacaeb8db0a7cc612db37d1e15cc",
-                "reference": "c28e39a14dc3cacaeb8db0a7cc612db37d1e15cc",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*"
-            },
-            "suggest": {
-                "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
-                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
-                "overtrue/laravel-lang": "Command to add languages in your project"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "caouecs",
-                    "email": "caouecs@caouecs.net"
-                }
-            ],
-            "description": "Languages for Laravel",
-            "keywords": [
-                "lang",
-                "languages",
-                "laravel",
-                "lpm"
-            ],
-            "abandoned": "https://github.com/Laravel-Lang/lang",
-            "time": "2020-08-05T17:42:42+00:00"
-        },
-        {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "v0.1.1",
             "source": {
@@ -797,6 +754,47 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "laravel-lang/lang",
+            "version": "7.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Lang/lang.git",
+                "reference": "48de35602d2bae883cbb6e48226b4749ae574c51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/48de35602d2bae883cbb6e48226b4749ae574c51",
+                "reference": "48de35602d2bae883cbb6e48226b4749ae574c51",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "suggest": {
+                "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laravel-Lang Team"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "time": "2020-09-11T13:09:12+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1615,24 +1613,25 @@
         },
         {
             "name": "overtrue/laravel-lang",
-            "version": "4.0.1",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/laravel-lang.git",
-                "reference": "8622a7d41fa52c502acaf63a4c416e849e02dfc7"
+                "reference": "8db02bb782ff3f27198740a7a5f47b8934f949ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/8622a7d41fa52c502acaf63a4c416e849e02dfc7",
-                "reference": "8622a7d41fa52c502acaf63a4c416e849e02dfc7",
+                "url": "https://api.github.com/repos/overtrue/laravel-lang/zipball/8db02bb782ff3f27198740a7a5f47b8934f949ea",
+                "reference": "8db02bb782ff3f27198740a7a5f47b8934f949ea",
                 "shasum": ""
             },
             "require": {
-                "caouecs/laravel-lang": "~7.0",
+                "ext-json": "*",
+                "laravel-lang/lang": "~7.0",
                 "symfony/process": "^5.0.0"
             },
             "require-dev": {
-                "laravel/framework": "~7.0"
+                "laravel/framework": "~8.1"
             },
             "type": "library",
             "extra": {
@@ -1660,7 +1659,7 @@
                     "email": "anzhengchao@gmail.com"
                 }
             ],
-            "description": "List of 52 languages for Laravel 5",
+            "description": "List of 75 languages for Laravel 4, 5, 6 and 7",
             "keywords": [
                 "i18n",
                 "languages",
@@ -1674,7 +1673,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-07-21T06:36:31+00:00"
+            "time": "2020-09-16T03:00:55+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -4087,7 +4086,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.1.4",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
