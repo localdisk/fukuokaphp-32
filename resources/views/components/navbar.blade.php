@@ -36,8 +36,8 @@
             @endauth
 
             @guest
-            <a href="{{ route('register') }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Register</a>
-            <a href="{{ route('login') }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Login</a>
+            <a href="{{ '/' }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Register</a>
+            <a href="{{ '/' }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Login</a>
             @endguest
 
           </div>
