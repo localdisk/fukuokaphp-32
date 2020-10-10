@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'top')->name('top');
+Route::get('/', function () {
+    $users = User::paginate(10);
+
+    return view('top', ['users' => $users]);
+});
 
 Route::view('/home', 'home')->name('home');

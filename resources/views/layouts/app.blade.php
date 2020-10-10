@@ -11,7 +11,7 @@
   <livewire:scripts />
 </head>
 
-<body class="h-full w-full bg-gray-200">
+<body class="h-full w-full bg-gray-100">
   <x-navbar></x-navbar>
 
   @yield('content')

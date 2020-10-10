@@ -15,6 +15,7 @@
         <div class="block">
           <div class="ml-4 flex items-center">
 
+<!--
             @auth
             <!-- Profile dropdown -->
             <div class="ml-3 relative" x-data="{ show: false }">
@@ -39,7 +40,7 @@
             <a href="{{ '/' }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Register</a>
             <a href="{{ '/' }}" class="block ml-3 px-3 py-2 rounded-md font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Login</a>
             @endguest
-
+ -->
           </div>
         </div>
       </div>
