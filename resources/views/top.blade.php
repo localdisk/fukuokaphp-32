@@ -27,7 +27,7 @@
       </button>
       </span>
       @error('email')
-      <p class="mt-2 text-red-500">foo</p>
+        <p class="mt-2 text-red-500">{{ $message }}</p>
       @enderror
     </p>
   </div>
