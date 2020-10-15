@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $users = User::paginate(10);
-
-    return view('top', ['users' => $users]);
+    return view('top');
 });
 
 Route::view('/home', 'home')->name('home');
