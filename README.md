@@ -1,14 +1,6 @@
-# Laravel Boilerplate
+# Fukuoka.PHP Vol.32 Livewire
 
-```
-$ composer install
-$ cp .env.example .env
-$ php artisan key:generate
-$ yarn
-$ yarn run watch
-$ bash ./vessel init
-$ ./vessel start
-```
+https://github.com/localdisk/laravel-boilerplate を使うとｼｬｯと環境がつくれます。
 
 
 ## Include Package
