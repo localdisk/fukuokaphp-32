@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e79001f1cea08ce15e401b690e262a2",
+    "content-hash": "a18d9309e4f5b202f4d269a7c8673c01",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2473,16 +2473,16 @@
         },
         {
             "name": "shipping-docker/vessel",
-            "version": "5.0.0",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shipping-docker/vessel.git",
-                "reference": "baf7e0481a48bd04b1bece2cdfa1a82edef64141"
+                "reference": "f86981b588d374188590b5ef8f78826d36efc97f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shipping-docker/vessel/zipball/baf7e0481a48bd04b1bece2cdfa1a82edef64141",
-                "reference": "baf7e0481a48bd04b1bece2cdfa1a82edef64141",
+                "url": "https://api.github.com/repos/shipping-docker/vessel/zipball/f86981b588d374188590b5ef8f78826d36efc97f",
+                "reference": "f86981b588d374188590b5ef8f78826d36efc97f",
                 "shasum": ""
             },
             "type": "library",
@@ -2509,7 +2509,7 @@
                 }
             ],
             "description": "Simple Docker dev environments",
-            "time": "2020-01-04T12:32:35+00:00"
+            "time": "2020-10-15T14:58:25+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
